@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+.title {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+}
+
+
+.btn-restart {
+    width: 120px;
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #5987af;
+    color: white;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+
+.btn-restart:hover {
+    background-color: rgb(216, 119, 8);
+    color: black;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 128px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid black;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: transparent;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.card.open {
+    background-color: rgb(166, 226, 191);
+    color: black;
+}
+
+
+.card.success {
+    background-color: greenyellow;
+    color: black;
+
+}
+
+
+.card.flip {
+    background-color: blue;
+    transition: all .2s ease;
+    transform: perspective(100px) rotateY(180deg);
+}
+
+
+.seconds {
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    color: blue;
+    border: none;
+}
